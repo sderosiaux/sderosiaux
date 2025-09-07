@@ -1,5 +1,7 @@
 Hi! I'm Stéphane and I'm the CTO and Co-founder of [Conduktor](https://conduktor.io). :rocket:
 
+If you want to work with me, consider adopting my values: https://sderosiaux.github.io/my-values
+
 ➡️ Find me on: [conduktor.io/slack](https://conduktor.io/slack) and let me a DM!
 
 Conduktor is a Data Platform specialized on Streaming technologies. Our goal is to scale streaming 
