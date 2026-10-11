@@ -1,13 +1,9 @@
-> My motto: Talking is cheap, show me prompt!
+> Talk is cheap. Show me the prompt.
 
-Hi! I'm Stéphane and I'm the CTO and Co-founder of [Conduktor](https://conduktor.io). :rocket:
+Hey, I'm Stéphane. I co-founded [Conduktor](https://conduktor.io), where we build tools for teams running Kafka.
 
-> Conduktor is a Kafka Operations Platform. We provide a devtools platform to help central teams defining multi-layered security and governance controls through
-Honored to work with such customers as Capital Group, Lufthansa, Honda, DICK'S, and so many other leading enterprises in USA and Europe.
+I also build a lot on the side: CLIs, Chrome extensions, macOS apps, small games. Most of them are a way to push LLMs as far as they go, and see where they stop. Some get finished. All of them end up here.
 
-If you want to work with me, consider adopting my values: https://sderosiaux.github.io/my-values
+If you build with LLMs too, we're probably hitting the same walls and having the same epiphanies. I share both as I go, the stuff that broke and the stuff that finally clicked. Follow me here for the repos and on [LinkedIn](https://www.linkedin.com/in/stephane-derosiaux/) for the stories behind them.
 
-I'm a very active person, follow me to learn at my pace:
-- https://www.linkedin.com/in/stephane-derosiaux/
-- https://substack.com/@sderosiaux
-- https://medium.com/@sderosiaux
+Learning this stuff, stuck on something, or just want to compare notes? Message me on LinkedIn. I love these conversations.
