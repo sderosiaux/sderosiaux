@@ -16,7 +16,9 @@ If you build with LLMs too, we're probably hitting the same walls and having the
 
 Building something with LLMs? Tell me about it on LinkedIn. I love hearing what people are making.
 
+<a href="https://sderosiaux.github.io/my-values/">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/values-dark.gif">
   <img alt="My values on a spinning wheel: End to end, Speed, Show it, Limits, Judgment, Share" src="assets/values-light.gif" width="100%">
 </picture>
+</a>
