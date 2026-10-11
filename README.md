@@ -22,3 +22,5 @@ Building something with LLMs? Tell me about it on LinkedIn. I love hearing what 
   <img alt="My values on a spinning wheel: End to end, Speed, Show it, Limits, Judgment, Share" src="assets/values-light.gif" width="100%">
 </picture>
 </a>
+
+<p align="center"><strong><a href="https://sderosiaux.github.io/my-values/">▶ Ready to work with me? Play the run</a></strong><br>Six values, told as a first-person run across the rooftops. Sound on.</p>
