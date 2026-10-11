@@ -3,11 +3,16 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 tmp=$(mktemp -d)
-for theme in Light Dark; do
-  npx remotion render src/index.ts "ValuesWheel$theme" "$tmp/$theme.mp4" --codec=h264 --crf=10 --log=error
-  # Flat art: no dithering keeps edges clean and LZW-friendly; 25 fps = exact 4cs GIF delay.
-  ffmpeg -loglevel error -y -i "$tmp/$theme.mp4" \
-    -vf "fps=25,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=96:stats_mode=diff[p];[b][p]paletteuse=dither=none:diff_mode=rectangle" \
-    -loop 0 "../assets/values-$(echo "$theme" | tr '[:upper:]' '[:lower:]').gif"
+for theme in light dark; do
+  case $theme in light) comp=ValuesWheelLight canvas=FFFFFF ;; dark) comp=ValuesWheelDark canvas=0D1117 ;; esac
+  # PNG frames, not h264: yuv420p shifts #FFFFFF to #FDFDFD and the canvas no longer matches GitHub's.
+  npx remotion render src/index.ts "$comp" "$tmp/$theme" --sequence --image-format=png --log=error
+  # 25 fps = exact 4cs GIF delay. Flat art: no dithering keeps edges clean and LZW-friendly.
+  ffmpeg -loglevel error -y -framerate 30 -pattern_type glob -i "$tmp/$theme/*.png" \
+    -vf "fps=25,scale=960:-1:flags=lanczos,palettegen=max_colors=96:stats_mode=diff" "$tmp/$theme-palette.png"
+  python3 pin-palette.py "$tmp/$theme-palette.png" "$canvas"
+  ffmpeg -loglevel error -y -framerate 30 -pattern_type glob -i "$tmp/$theme/*.png" -i "$tmp/$theme-palette.png" \
+    -lavfi "fps=25,scale=960:-1:flags=lanczos[v];[v][1:v]paletteuse=dither=none:diff_mode=rectangle" \
+    -loop 0 "../assets/values-$theme.gif"
 done
 rm -rf "$tmp"

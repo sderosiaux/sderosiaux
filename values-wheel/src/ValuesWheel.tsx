@@ -73,7 +73,6 @@ export const ValuesWheel = ({ theme: themeName }: ValuesWheelProps) => {
       <BigWord value={current} f={f} mode="enter" theme={theme} />
       <AccentBar f={f} color={accent} />
       <TypedLine text={current.line} f={f} theme={theme} accent={accent} />
-      <Footer step={step} theme={theme} />
     </AbsoluteFill>
   );
 };
@@ -221,25 +220,6 @@ const TypedLine = ({ text, f, theme, accent }: { text: string; f: number; theme:
       {text.slice(0, chars)}
       <span style={{ display: 'inline-block', width: 14, height: 28, marginLeft: 4, verticalAlign: '-5px', backgroundColor: cursorOn ? accent : 'transparent' }} />
     </div>
-  );
-};
-
-const Footer = ({ step, theme }: { step: number; theme: Theme }) => {
-  const style: CSSProperties = {
-    position: 'absolute',
-    top: 28, // top corners: the dial arc runs through the bottom ones
-    fontFamily: mono,
-    fontSize: 16,
-    letterSpacing: '0.18em',
-    color: theme.muted,
-  };
-  return (
-    <>
-      <div style={{ ...style, left: 32 }}>MY VALUES</div>
-      <div style={{ ...style, right: 32 }}>
-        {String(step + 1).padStart(2, '0')} / {String(VALUES.length).padStart(2, '0')}
-      </div>
-    </>
   );
 };
 
