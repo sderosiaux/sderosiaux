@@ -6,4 +6,4 @@ I also build a lot on the side: CLIs, Chrome extensions, macOS apps, small games
 
 If you build with LLMs too, we're probably hitting the same walls and having the same epiphanies. I share both as I go, the stuff that broke and the stuff that finally clicked. Follow me here for the repos and on [LinkedIn](https://www.linkedin.com/in/stephane-derosiaux/) for the stories behind them.
 
-Learning this stuff, stuck on something, or just want to compare notes? Message me on LinkedIn. I love these conversations.
+Building something with LLMs? Tell me about it on LinkedIn. I love hearing what people are making.
