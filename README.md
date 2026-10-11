@@ -24,4 +24,4 @@ Building something with LLMs? Tell me about it on LinkedIn. I love hearing what 
 </a>
 
 <p align="center"><strong><a href="https://sderosiaux.github.io/my-values/">▶ Ready to work with me? Play the run</a></strong><br>
-<a href="https://sderosiaux.github.io/my-values/"><img src="assets/my-values-run.jpg" width="290" alt="The my-values run in action: first-person sprint toward a SHOW IT billboard over white rooftops"></a></p>
+<a href="https://sderosiaux.github.io/my-values/"><img src="assets/my-values-run.gif" width="290" alt="Trailer of the my-values run: a first-person sprint, a zipline, a billboard flipping to SHOW IT, a value cleared, light spreading over the rooftops"></a></p>
